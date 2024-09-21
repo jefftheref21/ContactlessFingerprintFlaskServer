@@ -5,7 +5,7 @@ import bcrypt
 class Database():
     baseAddress = '/home/jwu283/shared/Fingerprint_demo'
     def __init__(self) -> None:
-        self.client = MongoClient("mongodb+srv://wujeffreyj:Renai31415@fingerprintcluster.fes169o.mongodb.net/?retryWrites=true&w=majority&appName=FingerprintCluster")
+        self.client = MongoClient("[REDACTED]")
         self.db = self.client['fingerprints']
         self.collection = self.db['users']
 
